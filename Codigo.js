@@ -16,7 +16,7 @@ app.use(logger);
 
 // Conexão com MongoDB
 mongoose.connect(process.env.MONGO_URI)
-  .then(() => console.log('✅ Conectado ao MongoDB'))
+  .then(() => console.log('Conectado ao MongoDB'))
   .catch(err => console.error('Erro ao conectar ao MongoDB:', err));
 
 // Modelo de usuário
@@ -89,5 +89,5 @@ app.delete('/api/users/:id', async (req, res) => {
 
 // Iniciar servidor
 app.listen(PORT, () => {
-  console.log(`🚀 Servidor rodando na porta ${PORT}`);
+  console.log(`Servidor rodando na porta ${PORT}`);
 });
